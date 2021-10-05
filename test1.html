@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Как нарисовать круг в HTML5 (Canvas)</title>
+
+</head>
+
+<body >
+
+<canvas id="canvas"></canvas>
+<!--<canvas id=bg></canvas>-->
+<script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    for (var i = 0; i < 500; i++)
+    {
+        ctx.beginPath();
+        ctx.moveTo(50, 10);
+        ctx.lineTo(i, i);
+
+        ctx.closePath();
+        ctx.stroke();
+    }
+</script>
+</body>
+</html>
